@@ -36,7 +36,8 @@ To run the project locally, follow these steps:
    This will start the Expo development server, and you can run the app on your device or emulator.
 
 ## Screenshots
-![image](https://github.com/g3vind/weather-app/assets/70854788/ad0fc762-d1c4-472b-b8bc-746e3020e579)
+![weather-app-ss](https://github.com/g3vind/weather-app/assets/70854788/081cf8ea-d406-457d-b11f-60ea7430223d)
+
 
 ## Dependencies
 
