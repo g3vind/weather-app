@@ -33,7 +33,7 @@ const Weather = () => {
 
   //   use effect for api calling when component renders
   useEffect(() => {
-    fetchWeatherData("Muzaffarpur");
+    fetchWeatherData("New York");
   }, []);
 
   //   show loading when data is being loaded
@@ -45,13 +45,22 @@ const Weather = () => {
         </View>
       </>
     );
+  } else if (weatherData === null) {
+    return (
+      <View style={styles.container}>
+        <Text>City Not Found 🤔</Text>
+      </View>
+    );
   }
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Weather App</Text>
       </View>
-      <WeatherScreen weatherData={weatherData} />
+      <WeatherScreen
+        weatherData={weatherData}
+        fetchWeatherData={fetchWeatherData}
+      />
     </View>
   );
 };
@@ -67,7 +76,7 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "center",
     backgroundColor: "#c5d2ef",
-    height: 50,
+    height: 60,
     justifyContent: "center",
   },
   headerTitle: { fontSize: 22, fontWeight: "bold" },
