@@ -55,6 +55,3 @@ To run the project locally, follow these steps:
 If you would like to contribute to the project, please open an issue or create a pull request.
 
 
----
-
-Feel free to customize this README file based on your project's specific details and needs. Include any additional sections or information that might be relevant to users or contributors.
